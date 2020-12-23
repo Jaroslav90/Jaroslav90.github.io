@@ -1,66 +1,39 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Three elements</title>
+	<title>Four elements</title>
 	<style>
-		.gblock{width: 100%; }
-		@media (min-width: 993px){
-			 .block, .bblock{
-				float: left;
-				border: 2px solid black;
-				margin: 2px;
-				font-family: Georgia;
-				font-size: 1.15em;
-				padding: 1rem; 
-				
+		h1{font-family: Georgia, serif;}
+		.b, .lb{    background: lightgray;
+    	border: 1px solid black;
+   		padding: 3px 10px;
+    	float: left;
+    	font-family: Georgia, serif;
+    	font-size:1.3em;
+    	margin: 10px;
+   		}
+   		h3{border: 1px solid black; width: 20%; min-width: 100px; margin: 0;}
+   		#hn1{background: rgb(200,100,100);}
+   		#hn2{background: rgb(100,200,100);}
+   		#hn3{background: rgb(100,100,200); color: gold;}
 
-			}
-			.block, .bblock{width: 29%; }
-		}
-		@media (min-width: 769px) and (max-width: 992px){
-			 .block, .bblock{
-				float: left;
-				border: 1px solid black;
-				padding: 1rem;
-				margin: 5px;
-				font-family: Georgia;
-				
+		@media (min-width: 993px){.b,.lb {width: 29%  }}
+		
 		
 
-			}
-			.block{width: 44%;}
 
-			
-		}
-		@media (max-width: 768px){
-			 .block, .bblock{
-				float: left;
-				border: 1px solid black;
-				padding: 1rem;
-				margin: 5px;
-				font-family: Georgia;
-				font-size: 1.15em;
+		@media (min-width: 769px) and (max-width: 992px){.b{width: 44.5%; margin-right: 1%;  }
 
-			}
-			.block, .bblock{width: 91%;}
-			
-		}
-
+		@media (max-width: 768px){}
 
 	</style>
 </head>
 <body>
-	<h1 align="center">Three elements</h1>
-	<div class="gblock">
-	<div class="block">
-		<p align="right">Вода</p>  <p style="color:blue;">Вода - стихія чистоти, підсвідомості, любові і емоцій.</p></div>
-
-	<div class="block">
-		<p align="right">Повітря</p>  <p style="color:black;">Повітря - стихія інтелекту, це царство думки, випереджаючої будь-яку творчість.</p></div>
-
-	<div class="bblock">
-		<p align="right">Вогонь</p>  <p style="color:red;">Вогонь - царство пристрасті. Він одночасно, і сама духовна, і сама фізична стихія. Магія вогню може лякати, але її результати завжди захоплююче і з'являються швидко. Вогонь - стихія не для боягузливих. Однак, він самий основний і тому часто використовується. Вогонь - царство пристрасті. Він одночасно і сама духовна, і сама фізична стихія.</p></div>
-	
-	</div>
+	<h1 align="center">Menu</h1>
+	<div class="gb" >
+		<div class="b"><h3 id="hn1" align="center">One</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div class="b">
+		<div class="b"><h3 id="hn2" align="center">Two</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div class="b">
+		<div class="lb"><h3 id="hn3" align="center">Three</h3>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div class="b">
+	</div class="gb">
 </body>
 </html>
